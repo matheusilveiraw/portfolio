@@ -6,6 +6,11 @@ body {
     flex-direction: column;
     margin: 0;
 }
+
+nav {
+  border-bottom: 2px solid red;
+}
+
 .content {
     flex: 1 0 auto;
 }
@@ -18,5 +23,5 @@ body {
 }
 
 .footer div a:hover{ 
-    color: gold;
+    color: red;
 }
