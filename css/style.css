@@ -4,6 +4,22 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.card-habilidades { 
+    height: 30px;
+    padding: 0 5px 0 5px;
+    background-color: gray;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.651);
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.tags-habilidades {
+    display: flex; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+}
+
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -12,7 +28,11 @@ body {
     margin-left: 150px;
     color: white;
     text-decoration: none;
-  }
+}
+
+.sobre{
+    text-indent: 20px;
+}
 
 body {
     display: flex;
@@ -36,46 +56,47 @@ body {
 }
 
 .conteudo-principal {
-    flex: 1 0 auto; /* Permite que o conteúdo se ajuste automaticamente */
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinhar itens ao centro horizontalmente */
-    justify-content: center; /* Alinhar itens ao centro verticalmente */
-    padding: 20px; /* Ajuste o padding para garantir que não haja excesso de espaço */
-    min-height: calc(100vh - 140px); /* Ajuste a altura mínima para compensar o cabeçalho e o rodapé */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: calc(100vh - 140px);
     background-color: rgba(0, 0, 0, 0.897);
 }
 
 .redes {
-    text-align: center; /* Centralizar texto e botões */
-}
-.redes .btn {
-    display: block;
-    margin: 0 auto; /* Garantir que os botões sejam centralizados */
+    text-align: center;
 }
 
-.destaque { 
+.redes .btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.destaque {
     color: rgba(255, 0, 0, 0.966);
 }
 
-.btn-redes { 
+.btn-redes {
     padding: 30px 50px;
     background-color: rgba(0, 0, 0, 0.39);
     color: rgba(255, 0, 0, 0.966);
     border-radius: 25px;
     text-decoration: none;
     border: 2px solid rgba(255, 0, 0, 0.644);
-    display: inline-block; 
+    display: inline-block;
     transition: background-color 2s ease, color 2s ease;
     font-size: 20px;
 }
 
 .btn-redes:hover {
     background-color: rgba(0, 0, 0, 2);
-    color: rgba(255, 0, 0, 1); 
+    color: rgba(255, 0, 0, 1);
 }
 
-.icone-redes { 
+.icone-redes {
     margin-right: 20px;
     margin-bottom: 5px;
 }
@@ -102,25 +123,27 @@ body {
 
 .container-fluid {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-    width: 100%;}
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
-    .navbar .navbar-brand {
-        flex: 1; /* Garante que o texto ocupe o máximo espaço disponível */
-        text-align: center; /* Centraliza o texto */
-    }
-    
-    .navbar-toggler {
-        margin-left: auto; /* Alinha o botão de alternância à direita */
-    }
+.navbar .navbar-brand {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
 
 @media (max-width: 400px) {
     .btn-redes {
-        padding: 20px 30px; /* Reduzir o padding para telas menores */
-        font-size: 14px; /* Reduzir o tamanho da fonte para telas menores */
+        padding: 20px 30px;
+        font-size: 14px;
     }
 }
+
 @media (max-width: 500px) {
     .bebas-neue-regular {
         margin-left: 30px;
@@ -132,6 +155,3 @@ body {
         margin-left: 0px;
     }
 }
-
-
-
