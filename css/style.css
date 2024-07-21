@@ -1,27 +1,137 @@
-html, body {
+html,
+body {
     height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: 150px;
+    color: white;
+    text-decoration: none;
+  }
+
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    background-color: rgba(0, 0, 0, 0.897);
 }
 
-nav {
-  border-bottom: 2px solid red;
+.img-conteudo-principal {
+    border-radius: 150px;
 }
 
-.content {
-    flex: 1 0 auto;
-}
-.footer {
-    flex-shrink: 0;
+.navbar {
+    border-bottom: 2px solid rgba(255, 0, 0, 0.651);
+    background-color: rgba(0, 0, 0, 0.897);
 }
 
-.footer div a { 
+.navbar-alteracoes .navbar-brand,
+.navbar-alteracoes .nav-link {
     color: white;
 }
 
-.footer div a:hover{ 
-    color: red;
+.conteudo-principal {
+    flex: 1 0 auto; /* Permite que o conteúdo se ajuste automaticamente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinhar itens ao centro horizontalmente */
+    justify-content: center; /* Alinhar itens ao centro verticalmente */
+    padding: 20px; /* Ajuste o padding para garantir que não haja excesso de espaço */
+    min-height: calc(100vh - 140px); /* Ajuste a altura mínima para compensar o cabeçalho e o rodapé */
+    background-color: rgba(0, 0, 0, 0.897);
 }
+
+.redes {
+    text-align: center; /* Centralizar texto e botões */
+}
+.redes .btn {
+    display: block;
+    margin: 0 auto; /* Garantir que os botões sejam centralizados */
+}
+
+.destaque { 
+    color: rgba(255, 0, 0, 0.966);
+}
+
+.btn-redes { 
+    padding: 30px 50px;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: rgba(255, 0, 0, 0.966);
+    border-radius: 25px;
+    text-decoration: none;
+    border: 2px solid rgba(255, 0, 0, 0.644);
+    display: inline-block; 
+    transition: background-color 2s ease, color 2s ease;
+    font-size: 20px;
+}
+
+.btn-redes:hover {
+    background-color: rgba(0, 0, 0, 2);
+    color: rgba(255, 0, 0, 1); 
+}
+
+.icone-redes { 
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.conteudo-principal p,
+.conteudo-principal h2,
+.conteudo-principal h1 {
+    color: white;
+}
+
+.footer {
+    flex-shrink: 0;
+    border-top: 2px solid rgba(255, 0, 0, 0.966);
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
+.footer div a {
+    color: white;
+}
+
+.footer div a:hover {
+    color: rgba(255, 0, 0, 0.651);
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    width: 100%;}
+
+    .navbar .navbar-brand {
+        flex: 1; /* Garante que o texto ocupe o máximo espaço disponível */
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    .navbar-toggler {
+        margin-left: auto; /* Alinha o botão de alternância à direita */
+    }
+
+@media (max-width: 400px) {
+    .btn-redes {
+        padding: 20px 30px; /* Reduzir o padding para telas menores */
+        font-size: 14px; /* Reduzir o tamanho da fonte para telas menores */
+    }
+}
+@media (max-width: 500px) {
+    .bebas-neue-regular {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 300px) {
+    .bebas-neue-regular {
+        margin-left: 0px;
+    }
+}
+
+
+
