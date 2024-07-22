@@ -199,3 +199,14 @@ body {
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+    .sobre {
+        margin: 0 15px 0 15px;
+    }
+
+    .card-habilidades  { 
+        margin-left: 10px;
+    }
+}
+
