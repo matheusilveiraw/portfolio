@@ -5,18 +5,23 @@ body {
 }
 
 .card-habilidades {
-    height: 30px;
-    padding: 0 5px 0 5px;
+    padding: 5px 10px; /* Ajuste os paddings conforme necessário */
     background-color: gray;
     border-bottom: 2px solid rgba(255, 0, 0, 0.651);
     border-radius: 15px;
     text-align: center;
     margin-bottom: 5px;
+    display: inline-block;
+    width: auto;
+    max-width: 100%; /* Limita a largura máxima a 100% do contêiner pai */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
 }
 
 .card-habilidades h5 a { 
     text-decoration: none;
     color: black;
+    display: block; /* Garante que o link preencha o contêiner */
+    word-wrap: break-word; /* Permite a quebra de palavras longas */
 }
 
 .card-habilidades h5 a:hover { 
@@ -40,7 +45,6 @@ body {
 
 .card-img {
     flex: 2;
-    /* Ocupa uma parte do espaço disponível */
 }
 
 .card-img img {
@@ -48,7 +52,6 @@ body {
     height: 400px;
     border-radius: 20px;
     margin: 5px 10px 25px 20px;
-    /* Ocupa uma parte do espaço disponível */
 }
 
 .card-informacoes {
@@ -188,5 +191,11 @@ body {
 @media (max-width: 300px) {
     .bebas-neue-regular {
         margin-left: 0px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .card-img {
+        display: none;
     }
 }
