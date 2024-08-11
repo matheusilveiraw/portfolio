@@ -5,7 +5,7 @@ body {
 }
 
 .card-habilidades {
-    padding: 5px 10px; /* Ajuste os paddings conforme necessário */
+    padding: 5px 10px;
     background-color: gray;
     border-bottom: 2px solid rgba(255, 0, 0, 0.651);
     border-radius: 15px;
@@ -13,15 +13,15 @@ body {
     margin-bottom: 5px;
     display: inline-block;
     width: auto;
-    max-width: 100%; /* Limita a largura máxima a 100% do contêiner pai */
-    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+    max-width: 100%; 
+    box-sizing: border-box;
 }
 
 .card-habilidades h5 a { 
     text-decoration: none;
     color: black;
-    display: block; /* Garante que o link preencha o contêiner */
-    word-wrap: break-word; /* Permite a quebra de palavras longas */
+    display: block; 
+    word-wrap: break-word; 
 }
 
 .card-habilidades h5 a:hover { 
@@ -199,3 +199,14 @@ body {
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+    .sobre {
+        margin: 0 15px 0 15px;
+    }
+
+    .card-habilidades  { 
+        margin-left: 10px;
+    }
+}
+
